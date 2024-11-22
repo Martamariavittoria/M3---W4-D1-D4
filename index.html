@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> M3 - Esercizio fine modulo - Netflix</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+
+
+
+  <!--TOP BAR-->
+  <header>
+
+    <div class="topbar sfondoNav">
+      <img src="./assets/Netflix_Logo_RGB.png" style="height: 70px; width: 150px;">
+
+      <!-- navbar -->
+      <div class="navbar">
+        <nav class="navbar navbar-expand-lg ">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container-fluid sfondoNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">My List</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="ricerca">
+        <i class="fa-solid fa-magnifying-glass icone"></i>
+        <p class="paragrafoProfilo"> KIDS </p>
+        <i class="fa-solid fa-bell icone"></i>
+
+        <li class="dropdown list-unstyled">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="./assets/IMG_4735.jpg" class="profilo">
+          </a>
+          <ul class="dropdown-menu bg-dark">
+            <li><a class="dropdown-item bg-transparent text-white" href="#"> <img src="./assets/IMG_4734 GREEN.jpg"
+                  class="immaginiProfilo"> Profilo 1</a></li>
+            <li><a class="dropdown-item  bg-transparent text-white" href="#"> <img src="./assets/IMG_4735 BLUE.jpg"
+                  class="immaginiProfilo"> Profilo 2</a></li>
+            <li><a class="dropdown-item  bg-transparent text-white" href="#"> <img src="./assets/IMG_4735 RED.jpg"
+                  class="immaginiProfilo"> Profilo 3</a></li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- SEZIONE TV SHOWS -->
+    <!-- Parte sinistra -->
+    <div class="d-flex justify-content-between d-flex align-items-center ">
+      <div class="parteSx d-flex justify-content-start align-items-center grid gap-3">
+        <h3> TV Shows </h3>
+        <div class="dropdown netflix-dropdown">
+          <button class="btn btn-secondary bg-transparent dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Genres &nbsp;&nbsp;
+          </button>
+
+          <ul class="menuMio dropdown-menu bg-dark ">
+            <div class="row">
+              <div class="col-md-4 ">
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Commedie</a></li>
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Horror</a></li>
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Thriller</a></li>
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Fantascienza e Fantasy</a></li>
+              </div>
+
+              <div class="col-md-4">
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Film per bambini e famiglie</a></li>
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Documentari </a></li>
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Film romantici </a></li>
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Film Indipendenti </a></li>
+              </div>
+
+              <div class="col-md-4">
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Film di animazione</a></li>
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Film d'azione e supereori</a></li>
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Film premiati</a></li>
+                <li><a class="dropdown-item bg-transparent text-white" href="#">Film basati su libri </a></li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Parte destra -->
+      <div class="iconeDx">
+        <div class="iconaDx1">
+          <i class="bi bi-text-left"></i>
+        </div>
+        <div class="iconaDx2">
+          <i class="bi bi-grid"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATALOGHI FILM -->
+    <div class="container">
+
+      <h4 class="mt-5"> Trending Now </h4>
+      <div class="rigaFilm">
+        <button class="bottone bottone1"> <i class="bi bi-caret-right"></i> </button>
+        <div class="stileImmagini" id="TrendingNow">
+        </div>
+        <button class="bottone bottone2"> <i class="bi bi-caret-left"></i></button>
+      </div>
+
+      <h4 class="mt-5">Watch It Again </h4>
+      <div class="rigaFilm">
+        <button class="bottone bottone1"><i class="bi bi-caret-right"></i></button>
+        <div class="stileImmagini" id="WatchItAgain">
+        </div>
+        <button class="bottone bottone2"><i class="bi bi-caret-left"></i></button>
+      </div>
+
+      <h4 class="mt-5"> New Releases </h4>
+      <div class="rigaFilm">
+        <button class="bottone bottone1"><i class="bi bi-caret-right"></i></button>
+        <div class="stileImmagini" id="NewReleases">
+        </div>
+        <button class="bottone bottone2"><i class="bi bi-caret-left"></i></button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Colonna uno -->
+        <div class="col">
+          <div class="d-flex gap-3 mb-2">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+          </div>
+          <div class="mb-2">Audio and Subtitles</div>
+          <div class="mb-2">Media Center</div>
+          <div class="mb-2">Privacy</div>
+          <div class="mb-2">Contact Us</div>
+        </div>
+
+        <!-- Colonna due -->
+        <div class="col">
+          <div class="mb-2">Audio description</div>
+          <div class="mb-2">Investor Relations</div>
+          <div class="mb-2">Legal Notices</div>
+        </div>
+
+        <!-- Colonna tre -->
+        <div class="col">
+          <div class="mb-2">Help Center</div>
+          <div class="mb-2">Jobs</div>
+          <div class="mb-2">Cookie Preferences</div>
+        </div>
+
+        <!-- Colonna quattro -->
+        <div class="col">
+          <div class="mb-2">Gift Cards</div>
+          <div class="mb-2">Terms of Use</div>
+          <div class="mb-2">Corporate Information</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ultima parte-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5>Service code</h5>
+          <p> &copy; 1997 - 2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+</body>
+
+<script src="https://kit.fontawesome.com/e42c46fb60.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
